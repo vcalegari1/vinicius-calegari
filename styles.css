@@ -1,0 +1,76 @@
+  /*
+    Declaring my variables
+    Using unit variable to set an even proportion of the screen, then apply the canculations to draw the divs accordingly
+  */
+  :root {
+    --unit: calc((min(100vh - 80px, 100vw)) / 7);
+  }
+   
+  *{
+    margin: 0;
+    padding: 0;
+  } 
+   
+  /*
+    Setting the proportion to be used for the squared divs
+  */
+  body{
+    background: white;
+    width: calc(var(--unit) * 7);
+    height: calc(var(--unit) * 7);   
+    }
+   
+  h1{
+    color: rgb(29, 29, 221);
+    padding: 2px 0 0 0;
+  }
+
+  p{
+    color: cyan;
+    padding: 0 0 1px 0;
+  }
+
+  #TopDiv1{
+    background: green;
+  }
+
+  Div{
+    font-size: 16px;
+  }
+
+  #TopDiv2{
+    background: Red;
+    height: calc(var(--unit) - 10px);
+    width: calc(var(--unit) - 10px);
+    border: solid 5px black;
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+  #MidDiv1{
+    background-color: green;
+    border: 10px solid rgb(224, 165, 175); 
+    width: calc(var(--unit) * 2 - 25px);
+    height: calc(var(--unit) * 2 - 25px);   
+    margin-left: calc((var(--unit)) + 4px); 
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+   
+  #BottomDiv1{ 
+    background-color: blue;
+    border: 15px solid rgb(235, 41, 160);
+    width: calc(var(--unit) * 4 - 80px);
+    height: calc(var(--unit) * 4 - 80px);
+    margin-left: calc((var(--unit)) * 3 + 8px);  
+    padding-left: 20px;
+    padding-top: 26px;
+  }   
+
+  /*
+    Apply green color for the h1 insite of #BottomDiv1 ONLY
+  */
+  #BottomDiv1 h1{
+    color:green;
+  }
+
+ 
